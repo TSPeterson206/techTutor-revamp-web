@@ -30,7 +30,7 @@ render() {
     <header>
       <nav className="topnav navbar" id="myTopnav">
         <div className="container mr-auto">
-          <div className="header-title"><a className="header-title" href={!this.props.user ? `/` : `/profile/${this.props.user.username}`}><FaShoePrints className="fa-2x"/> <strong>NextSteps</strong></a></div>
+          <div className="header-title"><a className="header-title" href={!this.props.user ? `/` : `/profile/${this.props.user.username}`}><FaShoePrints className="fa-2x"/> <strong>TechTutor</strong></a></div>
           <div className="navbar-right">
             {
               this.props.user ?
