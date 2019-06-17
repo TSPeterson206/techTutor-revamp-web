@@ -12,14 +12,11 @@ export default class Signup extends Component {
 
   handleSignUp = event => {
     event.preventDefault()
-    const { username, password, tagline, profilepic, soberdate } = event.target
+    const { username, password } = event.target
 
     request('/users', 'post', {
       username: username.value,
-      password: password.value,
-      tagline:tagline.value,
-      profilepic:profilepic.value,
-      soberdate:soberdate.value
+      password: password.value
     })
       .then(response => {
         this.setState({ showErrorMessage: false })
