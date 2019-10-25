@@ -27,7 +27,42 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+/* PROFILE */
+.profileContainer {
+  width: 25vw;
+}
+
+.profileNameContainer{
+  height:10vh;
+  background-color:purple;
+}
+.profilePicContainer {
+  display:flex;
+  height: 30vh;
+  background-color: grey;
+}
+
+.profileCoursesContainer {
+  height: 30vh;
+  background-color: blue;
+}
+
+.profileReviewsContainer {
+  height: 30vh;
+  background-color: yellow;
+}
+
+.profilePic{
+  /* width:100%; */
+  margin:auto;
+  height:90%;
+  border-radius:125px;
+}
+
+/* PROFILE - B */

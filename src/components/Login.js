@@ -96,6 +96,7 @@ render() {
               <Link className="small" to="/providerSignup">Are you a provider? Add your business here!</Link>
               </div>
             </form>
+            
           </div>
         </div>
       </div>
