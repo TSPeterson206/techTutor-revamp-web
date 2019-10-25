@@ -46,13 +46,14 @@ export default class App extends Component{
     <div className="App">
      <BrowserRouter>
               <div>
-                <Header setAuthentication={this.setAuthentication} user={this.state.authentication.user}/>
+                {/* <Header setAuthentication={this.setAuthentication} user={this.state.authentication.user}/> */}
                   <Switch>
-                    <Route path="/profile/:username" render={(props) => <Profile {...props} authentication={this.state.authentication} user={this.state.authentication.user} />}  />
-                    <Route path="/edit/:username" render={(props) => <EditProfile {...props} authentication={this.state.authentication} user={this.state.authentication.user} />} />
+                    {/* <Route path="/profile/:username" render={(props) => <Profile {...props} authentication={this.state.authentication} user={this.state.authentication.user} />}  /> */}
+                    {/* <Route path="/edit/:username" render={(props) => <EditProfile {...props} authentication={this.state.authentication} user={this.state.authentication.user} />} />
                     <Route path="/signup" render={(props) => <Signup {...props} setAuthentication={this.setAuthentication}/>} />
                     <Route path="/providerSignup" render={(props) => <ProviderSignup {...props} setAuthentication={this.setAuthentication}/>} />
-                    <Route path="/" render={(props) => <Login {...props} setAuthentication={this.setAuthentication}/>} />
+                    <Route path="/" render={(props) => <Login {...props} setAuthentication={this.setAuthentication}/>} /> */}
+                    <Route path="/profile" render={(props) => <Profile {...props} setAuthentication={this.setAuthentication}/>} />
                   </Switch>
               </div>
           </BrowserRouter>
